@@ -27,28 +27,111 @@
 			background-color:rgb(0, 128, 255);
 		border: 2px solid rgb(0, 92, 184);
 		box-shadow: 2px 2px  rgb(0, 62, 125);
-			left:70%;
-			top:60%;
-		}
-
-		#green{
-			background-color:lightgreen;
+			left:80%;
+			top:45%;
 		}
 
 		#purple{
-			background-color:violet;
+			background-color:rgb(157, 0, 2550);
+		border: 2px solid rgb(123, 0, 184);
+		box-shadow: 2px 2px  rgb(79, 0, 125);
+			left:9%;
+			top:80%;
 		}
+
+		#green{
+			background-color:rgb(30, 255, 0);
+		border: 2px solid rgb(37, 184, 0);
+		box-shadow: 2px 2px  rgb(4, 125, 0);
+			left:15%;
+			top:78%;
+		}
+
+		#pink{
+			background-color:rgb(255, 0, 225);
+		border: 2px solid rgb(184, 0, 132);
+		box-shadow: 2px 2px  rgb(125, 0, 79);
+			left:15%;
+			top:65%;
+
+		}
+		#yellow{
+			background-color:rgb(255, 247, 0);
+		border: 2px solid rgb(184, 184, 0);
+		box-shadow: 2px 2px  rgb(125, 123, 0);
+			right: 63%;
+			top: 66%;
+		}
+		#orange{
+			background-color:rgb(255, 132, 0);
+		border: 2px solid rgb(184, 86, 0);
+		box-shadow: 2px 2px  rgb(125, 58, 0);
+			left: 5%;
+			top: 28%;
+		}
+		#white{
+			background-color:rgb(255, 255, 255);
+		border: 2px solid rgb(130, 130, 130);
+		box-shadow: 2px 2px  rgb(50, 50, 50);
+			left: 0%;
+			top: 10%;
+		}
+		#black{
+			background-color:rgb(30, 30, 30);
+		border: 2px solid rgb(10, 10, 10);
+		box-shadow: 2px 2px  rgb(0, 0, 0);
+			right: 4%;
+			top: 38%;
+		}
+		#mint{
+			background-color:rgb(0, 255, 217);
+		border: 2px solid rgb(0, 181, 154);
+		box-shadow: 2px 2px  rgb(0, 112, 95);
+			left: 4%;
+			top: 30%;
+		}
+
+		#red{
+			background-color:rgb(255, 0, 0);
+		border: 2px solid rgb(180, 0, 0);
+		box-shadow: 2px 2px  rgb(105, 0, 0);
+			right: 30%;
+			top: 12%;
+		}
+
+		#paintbrush{
+		background-image: url(paintbrush.png);
+		}
+
 	</style>
 </head>
 <body>
 <div id="pallette">
 <div class="paint" id="blue"></div>
-
-<div class="paint" id="green"></div>
-
 <div class="paint" id="purple"></div>
+<div class="paint" id="green"></div>
+<div class="paint" id="pink"></div>
+<div class="paint" id="yellow"></div>
+<div class="paint" id="orange"></div>
+<div class="paint" id="white"></div>
+<div class="paint" id="black"></div>
+<div class="paint" id="mint"></div>
+<div class="paint" id= "red"></div>
 
 </div>
+
+<div class='paintbrush' id='paintbrush' ></div>
+
+<script type="text/javascript">
+	
+var bluePaint = document.getElementById('blue');
+bluePaint.addEventListener("click", function(){
+	console.log("THIS IS THE BLUE PAINT")
+})
+
+
+</script>
+
 
 </body>
 </html>

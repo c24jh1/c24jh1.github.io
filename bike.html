@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BIKE ANIMATION</title>
+    <link rel="icon" href="lo.png">
+    <style type="text/css">
+    .hearts {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        background-image: url(https://i.pinimg.com/originals/95/c1/d0/95c1d00ac3ecdebc2277d33d47b0d637.gif);
+
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: relative;
+        display: inline-block; 
+        background-repeat: no-repeat;
+
+    }
+
+    .horses{
+
+    	background-image:url(https://media0.giphy.com/media/l2R0dbksLJF44stZC/200_d.gif);
+    	background-size:contain;
+    	 position: relative;
+        display: inline-block;
+        width: 500px;
+        height: 300px;
+        animation-name:run;
+        animation-duration:5s;
+        animation-iteration-count: infinite;
+        background-repeat: no-repeat;
+    }
+    @keyframes floating {
+        0% {
+            transform: rotate(0deg);
+            background-image: url(https://i.pinimg.com/originals/24/ae/8d/24ae8def288851503cf68340df174963.gif);
+        }
+
+        25% {
+            transform: rotate(-45deg);
+            background-image: url(https://i.pinimg.com/originals/24/ae/8d/24ae8def288851503cf68340df174963.gif);
+        }
+
+        50% {
+            transform: rotate(0deg);
+
+            background-image: url(https://i.pinimg.com/originals/24/ae/8d/24ae8def288851503cf68340df174963.gif);
+        }
+
+        75% {
+            transform: rotate(45deg);
+            background-image: url(https://i.pinimg.com/originals/24/ae/8d/24ae8def288851503cf68340df174963.gif);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            background-image: url(https://i.pinimg.com/originals/24/ae/8d/24ae8def288851503cf68340df174963.gif);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hearts" id="heart1"></div>
+    <div class="hearts" id="heart1"></div>
+    <div class="hearts" id="heart1"></div>
+    <div class="hearts" id="heart1"></div>
+
+    <div class="horses" id="horse1">
+    </div>
+    <div class="horses" id="horse2"></div>
+</body>
+
+</html>

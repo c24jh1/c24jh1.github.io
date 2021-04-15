@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#bubbly{
+			width:400px;
+			height:400px;
+		border: 1px solid black;
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+
+		<h1>WHAT TYPE OF SELTZER ARE YOU?</h1>
+		
+		<div id="bubbly">
+			
+		</div>
+	</center>
+
+	<script type="text/javascript">
+var bubbly = document.getElementById('bubbly')
+var image = ["url(polgr.png)", "url(cranlime.png)", "url(blackcher.png)","url(lempol.png)", "url(boringpol.png)"]
+		bubbly.addEventListener('click',function(){
+			var x = Math.round(Math.random()*4)
+			console.log(image[x]);
+			bubbly.style.backgroundImage = image[x];
+		})
+
+// 		//Math.random() is a function that already exists in javascript that generates random number between 0 and 1//
+
+// 		var selt = ["pink", "hotpink", "orange", "lavander", "lightskyblue", "magenta", "black", "orange"]
+
+// 		var zer = ["rasp.png", 
+
+// 		"https://i5.walmartimages.com/asr/46b83709-c70e-4d4f-beff-458df8957914_1.d5abd79348a2d82be8fb28a730287e31.png", 
+
+// 		"https://www.handfamilycompanies.com/filebin/images/product_images/LaCroix_Lime.jpg", 
+
+// 		"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qc-MDOkvlgHCmFMPeXQoWl2ejB62rgzu1VeZe6nH0Zj5hOHoE3NVcrZ9Mnw7kf0YmT4&usqp=CAU)", 
+// ]
+// var box = document.getElementById('bubbly');
+
+// 		box.addEventListener("click", function(){
+
+// 			var pig = Math.floor(Math.random()*8);
+
+// 			console.log(selt[pig])
+
+// 			box.style.backgroundImage = zer[pig];
+
+// 			box.style.backgroundColor = selt[pig];
+
+
+// 		})
+
+
+	</script>
+
+</body>
+</html>

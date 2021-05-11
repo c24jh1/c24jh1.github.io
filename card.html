@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    html {
+        background-color: #9f75ff;
+    }
+
+    .heart {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        display: inline-block;
+		font-family: 'Inter', sans-serif;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        transition: 1s;
+    }
+
+    .pic {
+        background-image: url("peony.png");
+
+
+    }
+
+    h1 {
+	font-family: 'Inter', sans-serif;
+        position: relative;
+    }
+
+    h2 {
+		font-family: 'Inter', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>HAPPY MOTHERS DAY! You should have the best day because...</h1>
+    <h2>Love, your favorite child, Josie</h2>
+    <script type="text/javascript">
+    function makeHeart(i) {
+
+
+        var heart = document.createElement("heart");
+
+        document.body.appendChild(heart);
+        heart.classList.add("heart");
+        heart.classList.add("pic");
+        document.body.appendChild(heart);
+
+        heart.addEventListener("click", function() {
+            function remove() {
+                heart.classList.remove("pic");
+                heart.innerHTML = array[i];
+            };
+
+            function add() {
+                heart.classList.add("pic");
+                heart.innerHTML = "";
+            }
+            remove();
+            setTimeout(add, 2000)
+            console.log(event);
+        });
+
+
+        function move() {
+            heart.style.left = Math.round(Math.random() * 70) + "px";
+            heart.style.top = Math.round(Math.random() * 60) - 30 + "px";
+
+        };
+
+        setTimeout(move, 1);
+        setInterval(move, 1000);
+
+
+    };
+
+    var array = ["you make the best MSP", "you put up with me on greys day", "you bring me to school even when there is lots of traffic", "you love to binge shows with me", "you will make me popcorn", "personal uber driver", "you always make me laugh", "you always give me a bowl of cake batter or cookie doh when you bake", "you play tennis with me (even though you always win", "you love me no matter what", "you love shopping with me", "you put up with my jeans complaints", "you yummy me", "you spend the week in the city with me even though you love to be in connecticut",  
+    ];
+
+    for (var i = 0; i <= array.length - 1; i++) {
+        makeHeart(i);
+    }
+    </script>
+</body>
+
+</html>

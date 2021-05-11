@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-
+	<title>WHAT SELTZER ARE YOU?</title>
+<link rel="icon" href="lo.png">
 	<style type="text/css">
 		
 		#bubbly{
 			width:400px;
 			height:400px;
-		border: 1px solid black;
+		border: 1px ;
 			background-size:contain;
 			background-repeat: no-repeat;
 		}
@@ -27,9 +27,9 @@
 
 	<script type="text/javascript">
 var bubbly = document.getElementById('bubbly')
-var image = ["url(polgr.png)", "url(cranlime.png)", "url(blackcher.png)","url(lempol.png)", "url(boringpol.png)"]
+var image = ["url(polgr.png)", "url(cranlime.png)", "url(blackcher.png)","url(lempol.png)", "url(boringpol.png)", "url(cran.png)", "url(tan.png)","url(lemch.png)","url(wat.png)", "url(pash.png)","url(cher.png)","url(ap.png)","url(li.png)","url(grfr.png)","url(wa.png)","url(wa.png)","url(pe.png)","url(liwa.png)","url(blackcof.png)","url(grao.png)","url(cuc.png)","url(og.png)","url(pine.png)","url(straw.png)","url(coco.png)",]
 		bubbly.addEventListener('click',function(){
-			var x = Math.round(Math.random()*4)
+			var x = Math.round(Math.random()*24)
 			console.log(image[x]);
 			bubbly.style.backgroundImage = image[x];
 		})

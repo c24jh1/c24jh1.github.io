@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="lo.png">
+	<title>HOW MANY HEARTS</title>
+	<style type="text/css">
+		
+		.waffles{
+			width:100px;
+			height:100px;
+			background-image:url(lo.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+/*this is what determines the size, and what the image is*/
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+	
+	function makeWaffles (input){
+		var waffle = document.createElement("div");
+		document.body.appendChild(waffle);
+		waffle.classList.add('waffles');
+		waffle.innerText = input;
+// this is what creates something to use within javascript and creating a div
+	}
+
+for(var counter = 0; counter<10000; counter=counter+1){makeWaffles(counter);}
+	// this is what makes the waffles as many times as you want it
+
+
+
+</script>
+
+
+</body>
+</html>
